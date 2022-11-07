@@ -22,12 +22,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            Text(String(sharedTeams.data.count))
-                .task {
-                    await loadRankings()
-                }
-            
-            Text(dataFreshness.formatted())
+            VStack {
+                Text(String(sharedTeams.data.count))
+                    .task {
+                        await loadRankings()
+                    }
+                
+                Text(dataFreshness.formatted(date: .long, time:.omitted))
+            }
         }
     }
     
@@ -41,7 +43,10 @@ struct ContentView: View {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             
-            if let decodedResponse = try? JSONDecoder().decode(WorldRugbyResponse.self, from: data) {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .millisecondsSince1970
+            
+            if let decodedResponse = try? decoder.decode(WorldRugbyResponse.self, from: data) {
                 dataFreshness = decodedResponse.dataFreshness
                 sharedTeams.data = decodedResponse.teams
             }
