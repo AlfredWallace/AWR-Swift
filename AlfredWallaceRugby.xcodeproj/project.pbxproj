@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAA647F8291954A600B14640 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA647F7291954A600B14640 /* Team.swift */; };
 		BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */; };
 		BAC944AB291837CE004B96EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944AA291837CE004B96EB /* ContentView.swift */; };
 		BAC944AD291837CF004B96EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC944AC291837CF004B96EB /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAA647F7291954A600B14640 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		BAC944A5291837CE004B96EB /* AlfredWallaceRugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfredWallaceRugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredWallaceRugbyApp.swift; sourceTree = "<group>"; };
 		BAC944AA291837CE004B96EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */,
 				BAC944AA291837CE004B96EB /* ContentView.swift */,
+				BAA647F7291954A600B14640 /* Team.swift */,
 				BAC944AC291837CF004B96EB /* Assets.xcassets */,
 				BAC944AE291837CF004B96EB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA647F8291954A600B14640 /* Team.swift in Sources */,
 				BAC944AB291837CE004B96EB /* ContentView.swift in Sources */,
 				BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */,
 			);

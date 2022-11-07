@@ -17,14 +17,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var sharedTeams = SharedTeams()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Text("test")
+                .task {
+                    await loadRankings()
+                }
         }
-        .padding()
+    }
+    
+    
+    func loadRankings() async {
+//        guard let url = URL(string: "https://cmsapi.pulselive.com/rugby/rankings/mru") else {
+//            print("URL KAPUT")
+//            return
+//        }
+//
+//        do {
+//            let (data, _) = try await URLSession.shared.data(from: url)
+//        } catch {
+//            print("FETCH KAPUT")
+//            return
+//        }
+        
+//        if let decodedResponse = try? JSONDecoder().decode([Team].self, from: <#T##Data#>)
     }
 }
 
