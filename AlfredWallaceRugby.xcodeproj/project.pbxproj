@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA97BC442919A1080045D47B /* WorldRugbyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */; };
 		BAA647F8291954A600B14640 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA647F7291954A600B14640 /* Team.swift */; };
 		BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */; };
 		BAC944AB291837CE004B96EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944AA291837CE004B96EB /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRugbyResponse.swift; sourceTree = "<group>"; };
 		BAA647F7291954A600B14640 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		BAC944A5291837CE004B96EB /* AlfredWallaceRugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfredWallaceRugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredWallaceRugbyApp.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */,
 				BAC944AA291837CE004B96EB /* ContentView.swift */,
 				BAA647F7291954A600B14640 /* Team.swift */,
+				BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */,
 				BAC944AC291837CF004B96EB /* Assets.xcassets */,
 				BAC944AE291837CF004B96EB /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				BAA647F8291954A600B14640 /* Team.swift in Sources */,
 				BAC944AB291837CE004B96EB /* ContentView.swift in Sources */,
+				BA97BC442919A1080045D47B /* WorldRugbyResponse.swift in Sources */,
 				BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

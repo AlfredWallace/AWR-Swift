@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 class SharedTeams: ObservableObject {
     @Published var data = [Team]()
 }

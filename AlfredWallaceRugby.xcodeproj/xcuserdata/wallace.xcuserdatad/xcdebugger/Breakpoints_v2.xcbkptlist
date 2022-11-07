@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0648E778-6FED-4707-945A-50B94B232498"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F80B9E33-3319-41CB-856E-5B8C6675AC7C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlfredWallaceRugby/Team.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F80B9E33-3319-41CB-856E-5B8C6675AC7C - bce4757b81685d6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlfredWallaceRugby.SharedTeams.deinit"
+                  moduleName = "AlfredWallaceRugby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wallace/code/Swift/AlfredWallaceRugby/AlfredWallaceRugby/Team.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F80B9E33-3319-41CB-856E-5B8C6675AC7C - 70b2405c8c246e77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlfredWallaceRugby.SharedTeams.__deallocating_deinit"
+                  moduleName = "AlfredWallaceRugby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wallace/code/Swift/AlfredWallaceRugby/AlfredWallaceRugby/Team.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F80B9E33-3319-41CB-856E-5B8C6675AC7C - bc5c105b7dd6c48e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlfredWallaceRugby.SharedTeams.__allocating_init() -&gt; AlfredWallaceRugby.SharedTeams"
+                  moduleName = "AlfredWallaceRugby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wallace/code/Swift/AlfredWallaceRugby/AlfredWallaceRugby/Team.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F80B9E33-3319-41CB-856E-5B8C6675AC7C - dcc6fe78db33bc73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlfredWallaceRugby.SharedTeams.init() -&gt; AlfredWallaceRugby.SharedTeams"
+                  moduleName = "AlfredWallaceRugby"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wallace/code/Swift/AlfredWallaceRugby/AlfredWallaceRugby/Team.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F87C21B6-5D3B-4662-BC4A-C531C4D1A5FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlfredWallaceRugby/WorldRugbyResponse.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "EffectiveCodingKeys"
+            landmarkType = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -18,31 +18,37 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var sharedTeams = SharedTeams()
+    @State private var dataFreshness = Date()
     
     var body: some View {
         NavigationView {
-            Text("test")
+            Text(String(sharedTeams.data.count))
                 .task {
                     await loadRankings()
                 }
+            
+            Text(dataFreshness.formatted())
         }
     }
     
     
     func loadRankings() async {
-//        guard let url = URL(string: "https://cmsapi.pulselive.com/rugby/rankings/mru") else {
-//            print("URL KAPUT")
-//            return
-//        }
-//
-//        do {
-//            let (data, _) = try await URLSession.shared.data(from: url)
-//        } catch {
-//            print("FETCH KAPUT")
-//            return
-//        }
-        
-//        if let decodedResponse = try? JSONDecoder().decode([Team].self, from: <#T##Data#>)
+        guard let url = URL(string: "https://cmsapi.pulselive.com/rugby/rankings/mru") else {
+            print("URL KAPUT")
+            return
+        }
+
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            if let decodedResponse = try? JSONDecoder().decode(WorldRugbyResponse.self, from: data) {
+                dataFreshness = decodedResponse.dataFreshness
+                sharedTeams.data = decodedResponse.teams
+            }
+        } catch {
+            print("FETCH KAPUT")
+            return
+        }
     }
 }
 
