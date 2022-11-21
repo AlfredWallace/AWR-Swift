@@ -35,12 +35,9 @@ struct ContentView: View {
     
     
     func loadRankings() async {
-        guard let url = URL(string: "https://cmsapi.pulselive.com/rugby/rankings/mru") else {
-            print("URL KAPUT")
-            return
-        }
-
+        
         do {
+            let url = URL(string: "https://cmsapi.pulselive.com/rugby/rankings/mru")!
             let (data, _) = try await URLSession.shared.data(from: url)
             
             let decoder = JSONDecoder()
@@ -51,8 +48,7 @@ struct ContentView: View {
                 sharedTeams.data = decodedResponse.teams
             }
         } catch {
-            print("FETCH KAPUT")
-            return
+            print("Could not fetch or decode data, preventing coreData update.")
         }
     }
 }

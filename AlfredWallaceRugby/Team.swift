@@ -12,11 +12,11 @@ class SharedTeams: ObservableObject {
 }
 
 struct Team: Codable {
-    enum CodingKeys: String, CodingKey {
+    enum CodingKeys: CodingKey {
         case team, pts, pos
     }
     
-    enum TeamCodingKeys: String, CodingKey {
+    enum TeamCodingKeys: CodingKey {
         case id, name, abbreviation
     }
     
@@ -24,13 +24,15 @@ struct Team: Codable {
     let name: String
     let abbreviation: String
     
-    var points: Double
+    var initialPoints: Double
     var position: Int
+    
+    var points = [Double]()
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        points = try container.decode(Double.self, forKey: .pts)
+        initialPoints = try container.decode(Double.self, forKey: .pts)
         position = try container.decode(Int.self, forKey: .pos)
         
         let team = try container.nestedContainer(keyedBy: TeamCodingKeys.self, forKey: .team)
@@ -43,7 +45,7 @@ struct Team: Codable {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode(points, forKey: .pts)
+        try container.encode(initialPoints, forKey: .pts)
         try container.encode(position, forKey: .pos)
         
         var team = container.nestedContainer(keyedBy: TeamCodingKeys.self, forKey: .team)
