@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BA97BC442919A1080045D47B /* WorldRugbyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */; };
 		BAA647F8291954A600B14640 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA647F7291954A600B14640 /* Team.swift */; };
+		BAB4BB22292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAB4BB20292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodeld */; };
+		BAB4BB25292BB63800C8EFBB /* CachedTeam+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB4BB23292BB63800C8EFBB /* CachedTeam+CoreDataClass.swift */; };
+		BAB4BB26292BB63800C8EFBB /* CachedTeam+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB4BB24292BB63800C8EFBB /* CachedTeam+CoreDataProperties.swift */; };
+		BAB4BB28292BBBBA00C8EFBB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB4BB27292BBBBA00C8EFBB /* DataController.swift */; };
 		BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */; };
 		BAC944AB291837CE004B96EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC944AA291837CE004B96EB /* ContentView.swift */; };
 		BAC944AD291837CF004B96EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC944AC291837CF004B96EB /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* Begin PBXFileReference section */
 		BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRugbyResponse.swift; sourceTree = "<group>"; };
 		BAA647F7291954A600B14640 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		BAB4BB21292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlfredWallaceRugbyModel.xcdatamodel; sourceTree = "<group>"; };
+		BAB4BB23292BB63800C8EFBB /* CachedTeam+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTeam+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BAB4BB24292BB63800C8EFBB /* CachedTeam+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTeam+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BAB4BB27292BBBBA00C8EFBB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BAC944A5291837CE004B96EB /* AlfredWallaceRugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfredWallaceRugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfredWallaceRugbyApp.swift; sourceTree = "<group>"; };
 		BAC944AA291837CE004B96EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +63,13 @@
 		BAC944A7291837CE004B96EB /* AlfredWallaceRugby */ = {
 			isa = PBXGroup;
 			children = (
+				BAB4BB23292BB63800C8EFBB /* CachedTeam+CoreDataClass.swift */,
+				BAB4BB24292BB63800C8EFBB /* CachedTeam+CoreDataProperties.swift */,
 				BAC944A8291837CE004B96EB /* AlfredWallaceRugbyApp.swift */,
 				BAC944AA291837CE004B96EB /* ContentView.swift */,
+				BAB4BB27292BBBBA00C8EFBB /* DataController.swift */,
 				BAA647F7291954A600B14640 /* Team.swift */,
+				BAB4BB20292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodeld */,
 				BA97BC432919A1080045D47B /* WorldRugbyResponse.swift */,
 				BAC944AC291837CF004B96EB /* Assets.xcassets */,
 				BAC944AE291837CF004B96EB /* Preview Content */,
@@ -147,6 +159,10 @@
 				BAC944AB291837CE004B96EB /* ContentView.swift in Sources */,
 				BA97BC442919A1080045D47B /* WorldRugbyResponse.swift in Sources */,
 				BAC944A9291837CE004B96EB /* AlfredWallaceRugbyApp.swift in Sources */,
+				BAB4BB26292BB63800C8EFBB /* CachedTeam+CoreDataProperties.swift in Sources */,
+				BAB4BB28292BBBBA00C8EFBB /* DataController.swift in Sources */,
+				BAB4BB25292BB63800C8EFBB /* CachedTeam+CoreDataClass.swift in Sources */,
+				BAB4BB22292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BAB4BB20292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAB4BB21292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodel */,
+			);
+			currentVersion = BAB4BB21292BB54C00C8EFBB /* AlfredWallaceRugbyModel.xcdatamodel */;
+			path = AlfredWallaceRugbyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BAC9449D291837CE004B96EB /* Project object */;
 }
